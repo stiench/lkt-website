@@ -82,7 +82,7 @@ var winners = [
   {
     year: 2007,
     lan: 'Koh-LANta',
-    name: 'Julien'
+    name: 'Tim'
   },
   {
     year: 2006,
