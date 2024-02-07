@@ -30,6 +30,7 @@ function generateST() {
 
   var winsByName = {};
 
+  members = members.filter(member => member.end == "");
   members.forEach(function (member) {
     winsByName[member.name] = { name: member.name, wins: 0 };
   });

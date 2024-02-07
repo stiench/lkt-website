@@ -32,17 +32,21 @@ function generateEvents() {
 
   events.forEach(function (event) {
     var newRow = tbodyRef.insertRow();
+    var style = "";
 
-    newRow.insertCell().outerHTML = "<th>" + event.year + "</th>";
-    newRow.insertCell().outerHTML = "<th>" + event.where + "</th>";
-    newRow.insertCell().outerHTML = "<th>" + event.start + "</th>";
-    newRow.insertCell().outerHTML = "<th>" + event.end + "</th>";
+    if (!event.isCDO)
+      style = "background-color: #CBF2FF;";
+
+    newRow.insertCell().outerHTML = "<th style='" + style + "'>" + event.year + "</th>";
+    newRow.insertCell().outerHTML = "<th style='" + style + "'>" + event.where + "</th>";
+    newRow.insertCell().outerHTML = "<th style='" + style + "'>" + event.start + "</th>";
+    newRow.insertCell().outerHTML = "<th style='" + style + "'>" + event.end + "</th>";
 
     members.forEach(function (member) {
       if (event.members.includes(member.name)) {
-        newRow.insertCell().outerHTML = "<th><i class=\"fa fa-check fa-lg\" aria-hidden=\"true\" style=\"color:#008000;\"></i></th>";
+        newRow.insertCell().outerHTML = "<th style='" + style + "'><i class='fa fa-check fa-lg' aria-hidden='true' style='color:#008000;'></i></th>";
       }else{
-        newRow.insertCell().outerHTML = "<th></th>";
+        newRow.insertCell().outerHTML = "<th style='" + style + "'></th>";
       }
     });
   });
