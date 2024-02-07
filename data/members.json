@@ -1,62 +1,186 @@
 [
     {
-        "name": "Mic"
+        "name": "Mic",
+        "pseudo" : "Beorn",
+        "pseudoShort" : "Berno",
+        "start" : "Fondateur",
+        "end" : "",
+        "comment" : ""
     },
     {
-        "name": "Bastien"
+        "name": "Bastien",
+        "pseudo" : "Rampan",
+        "pseudoShort" : "Rmp",
+        "start" : "Fondateur",
+        "end" : "",
+        "comment" : ""
     },
     {
-        "name": "ChristianW"
+        "name": "ChristianW",
+        "pseudo" : "Rafaruto",
+        "pseudoShort" : "Rafa",
+        "start" : "Fondateur",
+        "end" : "",
+        "comment" : ""
     },
     {
-        "name": "Manu1"
+        "name": "Manu1",
+        "pseudo" : "Manmu",
+        "pseudoShort" : "Manu",
+        "start" : "Fondateur",
+        "end" : "",
+        "comment" : ""
     },
     {
-        "name": "Cyril"
+        "name": "Cyril",
+        "pseudo" : "Chaka",
+        "pseudoShort" : "Chaka",
+        "start" : "Fondateur",
+        "end" : "",
+        "comment" : ""
     },
     {
-        "name": "Nicolas"
+        "name": "Nicolas",
+        "pseudo" : "Vassily",
+        "pseudoShort" : "Vass",
+        "start" : "Fondateur",
+        "end" : "",
+        "comment" : ""
     },
     {
-        "name": "Séb"
+        "name": "Séb",
+        "pseudo" : "Muldoon",
+        "pseudoShort" : "mdn",
+        "start" : "Fondateur",
+        "end" : "",
+        "comment" : ""
     },
     {
-        "name": "Tim"
+        "name": "Tim",
+        "pseudo" : "LeGourdin",
+        "pseudoShort" : "Gourdin",
+        "start" : "Fondateur",
+        "end" : "",
+        "comment" : ""
     },
     {
-        "name": "ChristianP"
+        "name": "ChristianP",
+        "pseudo" : "Lui",
+        "pseudoShort" : "Lui",
+        "start" : "Fondateur",
+        "end" : "",
+        "comment" : "Quitté en 2009 et revenu en 2012"
     },
     {
-        "name": "Gab"
+        "name": "Gab",
+        "pseudo" : "Noriox",
+        "pseudoShort" : "Noriox",
+        "start" : "Fondateur",
+        "end" : "",
+        "comment" : ""
     },
     {
-        "name": "Julien"
+        "name": "Julien",
+        "pseudo" : "Groumpf",
+        "pseudoShort" : "Groumpf",
+        "start" : "Fondateur",
+        "end" : "",
+        "comment" : ""
     },
     {
-        "name": "Yannick"
+        "name": "Jérémy",
+        "pseudo" : "G2Loq",
+        "pseudoShort" : "G2Loq",
+        "start" : "Fondateur",
+        "end" : "2003",
+        "comment" : ""
     },
     {
-        "name": "Bruno"
+        "name": "Guewen",
+        "pseudo" : "Earwing",
+        "pseudoShort" : "Earwing",
+        "start" : "Fondateur",
+        "end" : "2004",
+        "comment" : ""
     },
     {
-        "name": "Yves"
+        "name": "Christophe",
+        "pseudo" : "Prophet",
+        "pseudoShort" : "Prophet",
+        "start" : "2003",
+        "end" : "2006",
+        "comment" : ""
     },
     {
-        "name": "Andréa"
+        "name": "Yannick",
+        "pseudo" : "Lulu",
+        "pseudoShort" : "Lulu",
+        "start" : "",
+        "end" : "",
+        "comment" : "Membre d'honneur"
     },
     {
-        "name": "Mathieu"
+        "name": "Bruno",
+        "pseudo" : "Turtle",
+        "pseudoShort" : "Turtle",
+        "start" : "2004",
+        "end" : "",
+        "comment" : ""
     },
     {
-        "name": "Giova"
+        "name": "Sylvain",
+        "pseudo" : "Sablas",
+        "pseudoShort" : "Sablas",
+        "start" : "2004",
+        "end" : "2007",
+        "comment" : ""
     },
     {
-        "name": "Manu2"
+        "name": "Yves",
+        "pseudo" : "Kaiz",
+        "pseudoShort" : "Kaiz",
+        "start" : "2004",
+        "end" : "",
+        "comment" : ""
     },
     {
-        "name": "Julien"
+        "name": "Alexandre",
+        "pseudo" : "KillerQueen",
+        "pseudoShort" : "KQ",
+        "start" : "2004",
+        "end" : "",
+        "comment" : ""
     },
     {
-        "name": "Julien"
+        "name": "Andréa",
+        "pseudo" : "Mandrax",
+        "pseudoShort" : "Mdx",
+        "start" : "2004",
+        "end" : "",
+        "comment" : ""
+    },
+    {
+        "name": "Mathieu",
+        "pseudo" : "Sblarfei",
+        "pseudoShort" : "Sblarf",
+        "start" : "2007",
+        "end" : "",
+        "comment" : ""
+    },
+    {
+        "name": "Giova",
+        "pseudo" : "Gova",
+        "pseudoShort" : "Gova",
+        "start" : "2013",
+        "end" : "",
+        "comment" : ""
+    },
+    {
+        "name": "Manu2",
+        "pseudo" : "Kobra",
+        "pseudoShort" : "Kobra",
+        "start" : "2018",
+        "end" : "",
+        "comment" : ""
     }
 ]
