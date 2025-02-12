@@ -721,6 +721,31 @@
         "orga": "",
         "isCDO": true,
         "members": [
+            "Séb",
+            "Mathieu",
+            "Nicolas",
+            "Gab",
+            "ChristianP",
+            "Yannick",
+            "Manu1",
+            "Mic",
+            "Giova",
+            "ChristianW",
+            "Julien",
+            "Bruno",
+            "Andréa"
+        ],
+        "guests": [ "Sablas" ]
+    },
+    {
+        "year": 2025,
+        "where": "Chateau d'Oex",
+        "start": "2024-05-29",
+        "end": "2024-06-01",
+        "remarks": "",
+        "orga": "",
+        "isCDO": true,
+        "members": [
             ""
         ],
         "guests": []
