@@ -760,5 +760,18 @@
             "Andréa"
         ],
         "guests": []
+    },
+    {
+        "year": 2026,
+        "where": "Chateau d'Oex",
+        "start": "2026-05-14",
+        "end": "2026-05-17",
+        "remarks": "",
+        "orga": "",
+        "isCDO": true,
+        "members": [
+            ""
+        ],
+        "guests": []
     }
 ]
