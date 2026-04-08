@@ -2,17 +2,17 @@
   {
     "year": 2005,
     "lan": "Lan-Story",
-    "winnerId": 17
+    "winnerId": "BGA"
   },
   {
     "year": 2006,
     "lan": "Lan-Story 2",
-    "winnerId": 11
+    "winnerId": "NGA"
   },
   {
     "year": 2007,
     "lan": "Koh-LANta",
-    "winnerId": 13
+    "winnerId": "THR"
   },
   {
     "year": 2008,
@@ -22,12 +22,12 @@
   {
     "year": 2009,
     "lan": "LAN-Story 3",
-    "winnerId": 23
+    "winnerId": "YBT"
   },
   {
     "year": 2010,
     "lan": "PekLAN Express, la route de la Whine",
-    "winnerId": 12
+    "winnerId": "SGR"
   },
   {
     "year": 2011,
@@ -37,72 +37,75 @@
   {
     "year": 2012,
     "lan": "PekLAN Express, le bateur mystère",
-    "winnerId": 12
+    "winnerId": "SGR"
   },
   {
     "year": 2013,
     "lan": "MasterLAN",
-    "winnerId": 9
+    "winnerId": "MBD"
   },
   {
     "year": 2014,
     "lan": "GranLANismo",
-    "winnerId": 12
+    "winnerId": "SGR"
   },
   {
     "year": 2015,
     "lan": "Battle RoyaLAN",
-    "winnerId": 9
+    "winnerId": "MBD"
   },
   {
     "year": 2016,
     "lan": "PauLANer",
-    "winnerId": 16
+    "winnerId": "AZN"
   },
   {
     "year": 2017,
     "lan": "LANAmerica",
-    "winnerId": 8
+    "winnerId": "JWL"
   },
   {
     "year": 2018,
     "lan": "Magical Mystery LAN",
-    "winnerId": 23
+    "winnerId": "YBT"
   },
   {
     "year": 2019,
     "lan": "Burger Quiz LAN",
-    "winnerId": 11
+    "winnerId": "NGA"
   },
   {
     "year": 2020,
     "lan": "Qui veut noober des millions",
-    "winnerId": 12
+    "winnerId": "SGR"
   },
   {
     "year": 2021,
     "lan": "Jass",
-    "winnerId": [10, 5]
+    "winnerId": [
+      "GSR",
+      "MWA"
+    ]
   },
   {
     "year": 2022,
     "lan": "PorcLAN",
-    "winnerId": 22
+    "winnerId": "MDH"
   },
   {
     "year": 2023,
     "lan": "LANiversaire",
-    "winnerId": 19
+    "winnerId": "YRE"
   },
   {
     "year": 2024,
     "lan": "Pas LAN",
-    "winnerId": 3
+    "winnerId": "CWA"
   },
   {
     "year": 2025,
     "lan": "LANekdote The Gathering",
-    "winnerId": 23
+    "winnerId": "YBT"
   },
   {
     "year": 2026,

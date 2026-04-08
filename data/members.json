@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "BRZ",
     "name": "Bastien",
     "surname": "Rebetez",
     "pseudo": "Rampan",
@@ -10,7 +10,7 @@
     "comment": ""
   },
   {
-    "id": 2,
+    "id": "CPT",
     "name": "Christian",
     "surname": "Perrudet",
     "pseudo": "Lui",
@@ -20,7 +20,7 @@
     "comment": "Quitté en 2009 et revenu en 2012"
   },
   {
-    "id": 3,
+    "id": "CWA",
     "name": "Christian",
     "surname": "Wyssa",
     "pseudo": "Rafaruto",
@@ -30,7 +30,7 @@
     "comment": ""
   },
   {
-    "id": 4,
+    "id": "CBO",
     "name": "Cyril",
     "surname": "Blanco",
     "pseudo": "Chaka",
@@ -40,8 +40,8 @@
     "comment": ""
   },
   {
-    "id": 5,
-    "name": "Gab",
+    "id": "GSR",
+    "name": "Gabriel",
     "surname": "Suter",
     "pseudo": "Noriox",
     "pseudoShort": "Noriox",
@@ -50,7 +50,7 @@
     "comment": ""
   },
   {
-    "id": 6,
+    "id": "GBR",
     "name": "Guewen",
     "surname": "Baconnier",
     "pseudo": "Earwing",
@@ -60,7 +60,7 @@
     "comment": ""
   },
   {
-    "id": 7,
+    "id": "JGQ",
     "name": "Jérémy",
     "surname": "G2Loq",
     "pseudo": "G2Loq",
@@ -70,7 +70,7 @@
     "comment": ""
   },
   {
-    "id": 8,
+    "id": "JWL",
     "name": "Julien",
     "surname": "Weibel",
     "pseudo": "Groumpf",
@@ -80,7 +80,7 @@
     "comment": ""
   },
   {
-    "id": 9,
+    "id": "MBD",
     "name": "Manuel",
     "surname": "Bavaud",
     "pseudo": "Manmu",
@@ -90,7 +90,7 @@
     "comment": ""
   },
   {
-    "id": 10,
+    "id": "MWA",
     "name": "Michael",
     "surname": "Wyssa",
     "pseudo": "Beorn",
@@ -100,7 +100,7 @@
     "comment": ""
   },
   {
-    "id": 11,
+    "id": "NGA",
     "name": "Nicolas",
     "surname": "Garcia",
     "pseudo": "Vassily",
@@ -110,7 +110,7 @@
     "comment": ""
   },
   {
-    "id": 12,
+    "id": "SGR",
     "name": "Sébastien",
     "surname": "Gerber",
     "pseudo": "Muldoon",
@@ -120,7 +120,7 @@
     "comment": ""
   },
   {
-    "id": 13,
+    "id": "THR",
     "name": "Timothée",
     "surname": "Haller",
     "pseudo": "LeGourdin",
@@ -130,7 +130,7 @@
     "comment": ""
   },
   {
-    "id": 14,
+    "id": "CCI",
     "name": "Christophe",
     "surname": "Cossi",
     "pseudo": "Prophet",
@@ -140,7 +140,7 @@
     "comment": ""
   },
   {
-    "id": 15,
+    "id": "ARO",
     "name": "Alexandre",
     "surname": "Romero",
     "pseudo": "KillerQueen",
@@ -150,7 +150,7 @@
     "comment": ""
   },
   {
-    "id": 16,
+    "id": "AZN",
     "name": "Andréa",
     "surname": "Zaffalon",
     "pseudo": "Mandrax",
@@ -160,7 +160,7 @@
     "comment": ""
   },
   {
-    "id": 17,
+    "id": "BGA",
     "name": "Bruno",
     "surname": "Gavaraglia",
     "pseudo": "Turtle",
@@ -170,7 +170,7 @@
     "comment": ""
   },
   {
-    "id": 18,
+    "id": "SND",
     "name": "Sylvain",
     "surname": "Neyroud",
     "pseudoShort": "Sablas",
@@ -179,7 +179,7 @@
     "comment": ""
   },
   {
-    "id": 19,
+    "id": "YRE",
     "name": "Yves",
     "surname": "Raschle",
     "pseudo": "Kaiz",
@@ -189,7 +189,7 @@
     "comment": ""
   },
   {
-    "id": 20,
+    "id": "MRX",
     "name": "Mathieu",
     "surname": "Ruffieux",
     "pseudo": "Sblarfei",
@@ -199,7 +199,7 @@
     "comment": ""
   },
   {
-    "id": 21,
+    "id": "GLA",
     "name": "Giovani",
     "surname": "La Rocca",
     "pseudo": "Gova",
@@ -209,7 +209,7 @@
     "comment": ""
   },
   {
-    "id": 22,
+    "id": "MDH",
     "name": "Manuel",
     "surname": "Deutsch",
     "pseudo": "Kobra",
@@ -219,7 +219,7 @@
     "comment": ""
   },
   {
-    "id": 23,
+    "id": "YBT",
     "name": "Yannick",
     "surname": "Beuchat",
     "pseudo": "Lulu",

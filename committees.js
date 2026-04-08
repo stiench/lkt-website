@@ -21,10 +21,7 @@ function getMemberName(memberId, membersById) {
   if (memberId == null)
     return '';
 
-  if (typeof memberId === 'number')
-    return membersById[memberId]?.name ?? `#${memberId}`;
-
-  return memberId;
+  return membersById[memberId]?.name ?? String(memberId);
 }
 
 function renderCommitteeRows() {

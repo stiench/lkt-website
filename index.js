@@ -29,7 +29,7 @@ function getWinnerIds(tournament) {
   if (Array.isArray(tournament.winnerId))
     return tournament.winnerId;
 
-  return Number.isInteger(tournament.winnerId) ? [tournament.winnerId] : [];
+  return tournament.winnerId ? [tournament.winnerId] : [];
 }
 
 function getWinnerDisplayName(tournament, membersById = getMembersById()) {
