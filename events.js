@@ -1,71 +1,105 @@
+const DEFAULT_EVENT_HEADERS = ['Année', 'Ou', 'Début', 'Fin'];
+const HIGHLIGHT_STYLE = 'background-color: #CBF2FF;';
+const CHECK_ICON = "<i class='fa fa-check fa-lg' aria-hidden='true' style='color:#008000;'></i>";
+
 let events = [];
 let members = [];
 
-async function loadEvents() {
-  await fetch('./data/events.json')
-  .then((response) => response.json())
-  .then((json) => events = json);
-}
-async function loadMembers() {
-  await fetch('./data/members.json')
-  .then((response) => response.json())
-  .then((json) => members = json);
+async function loadJson(path) {
+  const response = await fetch(path);
+  return response.json();
 }
 
-function generateEvents() {
-  let tbodyRef = document.getElementById('tableEvents').getElementsByTagName('tbody')[0];
-  let theadRef = document.getElementById('tableEvents').getElementsByTagName('thead')[0].rows[0];
+function getAttendanceByMember() {
+  return events.reduce((counts, event) => {
+    event.members.forEach((name) => {
+      counts[name] = (counts[name] || 0) + 1;
+    });
 
-  let activeMembers = members.filter(member => member.end == "");
+    return counts;
+  }, {});
+}
 
-  activeMembers.sort(function (first, second) {
-    let firstCount = events.filter(event => event.members.includes(first.name)).length;
-    let secondCount = events.filter(event => event.members.includes(second.name)).length;
+function getActiveMembersSortedByAttendance() {
+  const attendanceByMember = getAttendanceByMember();
 
-    if (secondCount == firstCount)
-      return first.name.localeCompare(second.name);
+  return members
+    .filter((member) => member.end === '')
+    .sort((first, second) => {
+      const firstCount = attendanceByMember[first.name] || 0;
+      const secondCount = attendanceByMember[second.name] || 0;
 
-    return secondCount - firstCount;
+      if (secondCount === firstCount)
+        return first.name.localeCompare(second.name);
+
+      return secondCount - firstCount;
+    });
+}
+
+function getSortedEvents() {
+  return [...events].sort((first, second) => {
+    const firstDate = new Date(first.start.replaceAll('-', '/')).getTime();
+    const secondDate = new Date(second.start.replaceAll('-', '/')).getTime();
+
+    return secondDate - firstDate;
   });
+}
 
-  activeMembers.forEach(function (member) {
-    theadRef.insertCell().outerHTML = "<th width=\"70\">" + member.name + "</th>";
+function resetTable(headerRow, bodyRef) {
+  headerRow.innerHTML = DEFAULT_EVENT_HEADERS
+    .map((label) => `<th>${label}</th>`)
+    .join('');
+
+  bodyRef.innerHTML = '';
+}
+
+function renderMemberHeaders(headerRow, activeMembers) {
+  activeMembers.forEach((member) => {
+    headerRow.insertCell().outerHTML = `<th width="70">${member.name}</th>`;
   });
+}
 
-  events.sort(function (first, second) {
-    let date1 = new Date(first.start.replace(/-/g,'/')).getTime();
-    let date2 = new Date(second.start.replace(/-/g,'/')).getTime();
-    return date2 - date1;
-  });
+function renderEventRows(bodyRef, activeMembers) {
+  getSortedEvents().forEach((event) => {
+    const newRow = bodyRef.insertRow();
+    const style = event.isCDO ? '' : HIGHLIGHT_STYLE;
 
-  events.forEach(function (event) {
-    let newRow = tbodyRef.insertRow();
-    let style = "";
+    newRow.insertCell().outerHTML = `<th style="${style}">${event.year}</th>`;
+    newRow.insertCell().outerHTML = `<th style="${style}">${event.where}</th>`;
+    newRow.insertCell().outerHTML = `<th style="${style}">${event.start}</th>`;
+    newRow.insertCell().outerHTML = `<th style="${style}">${event.end}</th>`;
 
-    if (!event.isCDO)
-      style = "background-color: #CBF2FF;";
-
-    newRow.insertCell().outerHTML = "<th style='" + style + "'>" + event.year + "</th>";
-    newRow.insertCell().outerHTML = "<th style='" + style + "'>" + event.where + "</th>";
-    newRow.insertCell().outerHTML = "<th style='" + style + "'>" + event.start + "</th>";
-    newRow.insertCell().outerHTML = "<th style='" + style + "'>" + event.end + "</th>";
-
-    activeMembers.forEach(function (member) {
-      if (event.members.includes(member.name)) {
-        newRow.insertCell().outerHTML = "<th style='" + style + "'><i class='fa fa-check fa-lg' aria-hidden='true' style='color:#008000;'></i></th>";
-      } else {
-        newRow.insertCell().outerHTML = "<th style='" + style + "'></th>";
-      }
+    activeMembers.forEach((member) => {
+      const content = event.members.includes(member.name) ? CHECK_ICON : '';
+      newRow.insertCell().outerHTML = `<th style="${style}">${content}</th>`;
     });
   });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  loadEvents()
-  .then(() => loadMembers())
-  .then(() => {
-    generateEvents();
-  })
+function generateEvents() {
+  const table = document.getElementById('tableEvents');
+  const bodyRef = table.getElementsByTagName('tbody')[0];
+  const headerRow = table.getElementsByTagName('thead')[0].rows[0];
+  const activeMembers = getActiveMembersSortedByAttendance();
 
-  console.log("\r\n .----------------.  .----------------.   .----------------.  .----------------.  .----------------. \r\n| .--------------. || .--------------. | | .--------------. || .--------------. || .--------------. |\r\n| |  _________   | || |    ______    | | | | ____    ____ | || |     _____    | || |     ______   | |\r\n| | |  _   _  |  | || |  .\' ___  |   | | | ||_   \\  \/   _|| || |    |_   _|   | || |   .\' ___  |  | |\r\n| | |_\/ | | \\_|  | || | \/ .\'   \\_|   | | | |  |   \\\/   |  | || |      | |     | || |  \/ .\'   \\_|  | |\r\n| |     | |      | || | | |    ____  | | | |  | |\\  \/| |  | || |      | |     | || |  | |         | |\r\n| |    _| |_     | || | \\ `.___]  _| | | | | _| |_\\\/_| |_ | || |     _| |_    | || |  \\ `.___.\'\\  | |\r\n| |   |_____|    | || |  `._____.\'   | | | ||_____||_____|| || |    |_____|   | || |   `._____.\'  | |\r\n| |              | || |              | | | |              | || |              | || |              | |\r\n| \'--------------\' || \'--------------\' | | \'--------------\' || \'--------------\' || \'--------------\' |\r\n \'----------------\'  \'----------------\'   \'----------------\'  \'----------------\'  \'----------------\' ");
+  resetTable(headerRow, bodyRef);
+  renderMemberHeaders(headerRow, activeMembers);
+  renderEventRows(bodyRef, activeMembers);
+}
+
+document.addEventListener('DOMContentLoaded', async function () {
+  try {
+    [events, members] = await Promise.all([
+      loadJson('./data/events.json'),
+      loadJson('./data/members.json')
+    ]);
+
+    generateEvents();
+  } catch (error) {
+    console.error('Failed to load events page data:', error);
+  }
+
+  if (typeof logLktBanner === 'function') {
+    logLktBanner();
+  }
 });
