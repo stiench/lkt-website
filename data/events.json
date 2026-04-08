@@ -769,12 +769,26 @@
         "where": "Chateau d'Oex",
         "start": "2026-05-13",
         "end": "2026-05-17",
-        "remarks": "",
+        "remarks": "Julien qu'un jour",
         "orga": "",
         "isCDO": true,
         "members": [
-            ""
+            "Séb",
+            "Mathieu",
+            "Nicolas",
+            "Gab",
+            "Manu1",
+            "Yves",
+            "Mic",
+            "Giova",
+            "Julien",
+            "Bruno",
+            "Andréa",
+            "Bastien",
+            "Yannick",
+            "Manu2",
+            "Cyril"
         ],
-        "guests": []
+        "guests": [ "Raph" ]
     }
 ]
