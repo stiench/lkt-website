@@ -3,4 +3,11 @@
 </p>
 
 # LKT website
-tg mic
+TG Mic
+
+## Run locally
+
+```bash
+cd /home/sgerber/git/lkt-website
+python3 -m http.server 8000
+```

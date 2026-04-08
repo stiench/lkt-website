@@ -1,5 +1,6 @@
 let members = [];
 let tournaments = [];
+let committeeMembers = [];
 
 async function loadMembers() {
   await fetch('./data/members.json')
@@ -11,6 +12,12 @@ async function loadTournaments() {
   await fetch('./data/tournaments.json')
   .then((response) => response.json())
   .then((json) => tournaments = json);
+}
+
+async function loadCommitteeMembers() {
+  await fetch('./data/committee-members.json')
+  .then((response) => response.json())
+  .then((json) => committeeMembers = json);
 }
 
 function generateCL() {
@@ -25,6 +32,15 @@ function generateCL() {
       newRow.insertCell().outerHTML = "<td>" + winner.lan + "</td>";
       newRow.insertCell().outerHTML = "<td>" + winner.name + "</td>";
     });
+}
+
+function generateCommitteeMembers() {
+  let committeeRef = document.getElementById('committeeMembers');
+
+  committeeRef.innerHTML = committeeMembers.map(function (member) {
+    return '<i class="fa fa-user" aria-hidden="true"></i> ' + member.role +
+      ' <i class="fa fa-arrow-right" aria-hidden="true"></i> ' + member.name;
+  }).join('<br />');
 }
 
 function generateST() {
@@ -74,12 +90,13 @@ function generateST() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  loadMembers()
-  .then(() => loadTournaments())
+  Promise.all([loadMembers(), loadTournaments(), loadCommitteeMembers()])
   .then(() => {
     generateCL();
     generateST();
+    generateCommitteeMembers();
   })
+  .catch((error) => console.error('Failed to load homepage data:', error));
 
   console.log("\r\n .----------------.  .----------------.   .----------------.  .----------------.  .----------------. \r\n| .--------------. || .--------------. | | .--------------. || .--------------. || .--------------. |\r\n| |  _________   | || |    ______    | | | | ____    ____ | || |     _____    | || |     ______   | |\r\n| | |  _   _  |  | || |  .\' ___  |   | | | ||_   \\  \/   _|| || |    |_   _|   | || |   .\' ___  |  | |\r\n| | |_\/ | | \\_|  | || | \/ .\'   \\_|   | | | |  |   \\\/   |  | || |      | |     | || |  \/ .\'   \\_|  | |\r\n| |     | |      | || | | |    ____  | | | |  | |\\  \/| |  | || |      | |     | || |  | |         | |\r\n| |    _| |_     | || | \\ `.___]  _| | | | | _| |_\\\/_| |_ | || |     _| |_    | || |  \\ `.___.\'\\  | |\r\n| |   |_____|    | || |  `._____.\'   | | | ||_____||_____|| || |    |_____|   | || |   `._____.\'  | |\r\n| |              | || |              | | | |              | || |              | || |              | |\r\n| \'--------------\' || \'--------------\' | | \'--------------\' || \'--------------\' || \'--------------\' |\r\n \'----------------\'  \'----------------\'   \'----------------\'  \'----------------\'  \'----------------\' ");
 });
