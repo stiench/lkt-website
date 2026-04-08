@@ -14,39 +14,45 @@ async function loadTournaments() {
 }
 
 function generateCL() {
-  var tbodyRef = document.getElementById('tableCL').getElementsByTagName('tbody')[0];
+  let tbodyRef = document.getElementById('tableCL').getElementsByTagName('tbody')[0];
 
-  tournaments.forEach(function (winner) {
-    var newRow = tbodyRef.insertRow();
+  [...tournaments]
+    .sort((first, second) => second.year - first.year)
+    .forEach(function (winner) {
+      let newRow = tbodyRef.insertRow();
 
-    newRow.insertCell().outerHTML = "<th>" + winner.year + "</th>";
-    newRow.insertCell().outerHTML = "<td>" + winner.lan + "</td>";
-    newRow.insertCell().outerHTML = "<td>" + winner.name + "</td>";
-  });
+      newRow.insertCell().outerHTML = "<th>" + winner.year + "</th>";
+      newRow.insertCell().outerHTML = "<td>" + winner.lan + "</td>";
+      newRow.insertCell().outerHTML = "<td>" + winner.name + "</td>";
+    });
 }
 
 function generateST() {
-  var tbodyRef = document.getElementById('tableSt').getElementsByTagName('tbody')[0];
+  let tbodyRef = document.getElementById('tableSt').getElementsByTagName('tbody')[0];
 
-  var winsByName = {};
+  let winsByName = {};
+  let activeMembers = members.filter(member => member.end == "");
 
-  members = members.filter(member => member.end == "");
-  members.forEach(function (member) {
+  activeMembers.forEach(function (member) {
     winsByName[member.name] = { name: member.name, wins: 0 };
   });
 
   tournaments.forEach(function (winner) {
-    var splitted = winner.name.split(' & ');
+    let splitted = winner.name.split(' & ');
     splitted.forEach(function (name) {
-      if (name != 'N/A')
-        if (splitted.length == 1)
-          winsByName[name].wins++;
-        else
-          winsByName[name].wins += 0.5;
+      let normalizedName = name.trim();
+
+      if (normalizedName == 'N/A' || normalizedName == 'tbd' || !winsByName[normalizedName])
+        return;
+
+      if (splitted.length == 1)
+        winsByName[normalizedName].wins++;
+      else
+        winsByName[normalizedName].wins += 0.5;
     });
   });
 
-  var boulzWithWins = Object.keys(winsByName).map(function (key) {
+  let boulzWithWins = Object.keys(winsByName).map(function (key) {
     return winsByName[key];
   });
 
@@ -58,10 +64,10 @@ function generateST() {
   });
 
   boulzWithWins.forEach(function (boulz) {
-    var fullStartStr = Array(Math.floor(boulz.wins)).fill(null).reduce((a) => a + '<i class="fa fa-star fa-lg" aria-hidden="true" style="color:#facf00;"></i>', '');
-    var halfStartStr = boulz.wins % 1 > 0 ? '<i class="fa fa-star-half-o fa-lg" aria-hidden="true" style="color:#facf00;"></i>' : '';
+    let fullStartStr = new Array(Math.floor(boulz.wins)).fill(null).reduce((a) => a + '<i class="fa fa-star fa-lg" aria-hidden="true" style="color:#facf00;"></i>', '');
+    let halfStartStr = boulz.wins % 1 > 0 ? '<i class="fa fa-star-half-o fa-lg" aria-hidden="true" style="color:#facf00;"></i>' : '';
 
-    var newRow = tbodyRef.insertRow();
+    let newRow = tbodyRef.insertRow();
     newRow.insertCell().outerHTML = "<th><center>" + fullStartStr + halfStartStr + "</center></th>";
     newRow.insertCell().outerHTML = "<td>" + boulz.name + "</td>";
   });
