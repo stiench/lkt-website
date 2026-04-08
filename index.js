@@ -1,6 +1,5 @@
 const FULL_STAR_ICON = '<i class="fa fa-star fa-lg" aria-hidden="true" style="color:#facf00;"></i>';
 const HALF_STAR_ICON = '<i class="fa fa-star-half-o fa-lg" aria-hidden="true" style="color:#facf00;"></i>';
-const PLACEHOLDER_WINNERS = new Set(['N/A', 'tbd']);
 
 let members = [];
 let tournaments = [];
@@ -19,28 +18,50 @@ function getSortedTournaments() {
   return [...tournaments].sort((first, second) => second.year - first.year);
 }
 
+function getMembersById() {
+  return members.reduce((result, member) => {
+    result[member.id] = member;
+    return result;
+  }, {});
+}
+
+function getWinnerIds(tournament) {
+  if (Array.isArray(tournament.winnerId))
+    return tournament.winnerId;
+
+  return Number.isInteger(tournament.winnerId) ? [tournament.winnerId] : [];
+}
+
+function getWinnerDisplayName(tournament, membersById = getMembersById()) {
+  const winnerIds = getWinnerIds(tournament);
+
+  if (!winnerIds.length)
+    return tournament.lan.toLowerCase() === 'tbd' ? 'tbd' : 'N/A';
+
+  return winnerIds
+    .map((id) => membersById[id]?.name ?? `#${id}`)
+    .join(' & ');
+}
+
 function buildStars(wins) {
   return FULL_STAR_ICON.repeat(Math.floor(wins)) + (wins % 1 > 0 ? HALF_STAR_ICON : '');
 }
 
 function getStandings() {
-  const winsByName = getActiveMembers().reduce((result, member) => {
-    result[member.name] = { name: member.name, wins: 0 };
+  const winsById = getActiveMembers().reduce((result, member) => {
+    result[member.id] = { id: member.id, name: member.name, wins: 0 };
     return result;
   }, {});
 
-  tournaments.forEach((winner) => {
-    const winners = winner.name
-      .split(' & ')
-      .map((name) => name.trim())
-      .filter((name) => name && !PLACEHOLDER_WINNERS.has(name) && winsByName[name]);
+  tournaments.forEach((tournament) => {
+    const winnerIds = getWinnerIds(tournament).filter((id) => winsById[id]);
 
-    winners.forEach((name) => {
-      winsByName[name].wins += winners.length === 1 ? 1 : 0.5;
+    winnerIds.forEach((id) => {
+      winsById[id].wins += winnerIds.length === 1 ? 1 : 0.5;
     });
   });
 
-  return Object.values(winsByName).sort((first, second) => {
+  return Object.values(winsById).sort((first, second) => {
     if (second.wins === first.wins)
       return first.name.localeCompare(second.name);
 
@@ -50,6 +71,7 @@ function getStandings() {
 
 function generateCL() {
   const tbodyRef = document.getElementById('tableCL').getElementsByTagName('tbody')[0];
+  const membersById = getMembersById();
   tbodyRef.innerHTML = '';
 
   getSortedTournaments().forEach((winner) => {
@@ -57,7 +79,7 @@ function generateCL() {
 
     newRow.insertCell().outerHTML = `<th>${winner.year}</th>`;
     newRow.insertCell().outerHTML = `<td>${winner.lan}</td>`;
-    newRow.insertCell().outerHTML = `<td>${winner.name}</td>`;
+    newRow.insertCell().outerHTML = `<td>${getWinnerDisplayName(winner, membersById)}</td>`;
   });
 }
 

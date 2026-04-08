@@ -2,111 +2,111 @@
   {
     "year": 2005,
     "lan": "Lan-Story",
-    "name": "Bruno"
+    "winnerId": 17
   },
   {
     "year": 2006,
     "lan": "Lan-Story 2",
-    "name": "Nicolas"
+    "winnerId": 11
   },
   {
     "year": 2007,
     "lan": "Koh-LANta",
-    "name": "Tim"
+    "winnerId": 13
   },
   {
     "year": 2008,
     "lan": "LAN & Conquer",
-    "name": "N/A"
+    "winnerId": null
   },
   {
     "year": 2009,
     "lan": "LAN-Story 3",
-    "name": "Yannick"
+    "winnerId": 23
   },
   {
     "year": 2010,
     "lan": "PekLAN Express, la route de la Whine",
-    "name": "Séb"
+    "winnerId": 12
   },
   {
     "year": 2011,
     "lan": "PekLAN Express, le copier coller",
-    "name": "N/A"
+    "winnerId": null
   },
   {
     "year": 2012,
     "lan": "PekLAN Express, le bateur mystère",
-    "name": "Séb"
+    "winnerId": 12
   },
   {
     "year": 2013,
     "lan": "MasterLAN",
-    "name": "Manu1"
+    "winnerId": 9
   },
   {
     "year": 2014,
     "lan": "GranLANismo",
-    "name": "Séb"
+    "winnerId": 12
   },
   {
     "year": 2015,
     "lan": "Battle RoyaLAN",
-    "name": "Manu1"
+    "winnerId": 9
   },
   {
     "year": 2016,
     "lan": "PauLANer",
-    "name": "Andréa"
+    "winnerId": 16
   },
   {
     "year": 2017,
     "lan": "LANAmerica",
-    "name": "Julien"
+    "winnerId": 8
   },
   {
     "year": 2018,
     "lan": "Magical Mystery LAN",
-    "name": "Yannick"
+    "winnerId": 23
   },
   {
     "year": 2019,
     "lan": "Burger Quiz LAN",
-    "name": "Nicolas"
+    "winnerId": 11
   },
   {
     "year": 2020,
     "lan": "Qui veut noober des millions",
-    "name": "Séb"
+    "winnerId": 12
   },
   {
     "year": 2021,
     "lan": "Jass",
-    "name": "Mic & Gab"
+    "winnerId": [10, 5]
   },
   {
     "year": 2022,
     "lan": "PorcLAN",
-    "name": "Manu2"
+    "winnerId": 22
   },
   {
     "year": 2023,
     "lan": "LANiversaire",
-    "name": "Yves"
+    "winnerId": 19
   },
   {
     "year": 2024,
     "lan": "Pas LAN",
-    "name": "ChristianW"
+    "winnerId": 3
   },
   {
     "year": 2025,
     "lan": "LANekdote The Gathering",
-    "name": "Yannick"
+    "winnerId": 23
   },
   {
     "year": 2026,
     "lan": "tbd",
-    "name": "tbd"
+    "winnerId": null
   }
 ]

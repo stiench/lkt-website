@@ -12,8 +12,8 @@ async function loadJson(path) {
 
 function getAttendanceByMember() {
   return events.reduce((counts, event) => {
-    event.members.forEach((name) => {
-      counts[name] = (counts[name] || 0) + 1;
+    event.members.forEach((memberId) => {
+      counts[memberId] = (counts[memberId] || 0) + 1;
     });
 
     return counts;
@@ -26,8 +26,8 @@ function getActiveMembersSortedByAttendance() {
   return members
     .filter((member) => member.end === '')
     .sort((first, second) => {
-      const firstCount = attendanceByMember[first.name] || 0;
-      const secondCount = attendanceByMember[second.name] || 0;
+      const firstCount = attendanceByMember[first.id] || 0;
+      const secondCount = attendanceByMember[second.id] || 0;
 
       if (secondCount === firstCount)
         return first.name.localeCompare(second.name);
@@ -70,7 +70,7 @@ function renderEventRows(bodyRef, activeMembers) {
     newRow.insertCell().outerHTML = `<th style="${style}">${event.end}</th>`;
 
     activeMembers.forEach((member) => {
-      const content = event.members.includes(member.name) ? CHECK_ICON : '';
+      const content = event.members.includes(member.id) ? CHECK_ICON : '';
       newRow.insertCell().outerHTML = `<th style="${style}">${content}</th>`;
     });
   });

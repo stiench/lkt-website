@@ -1,146 +1,146 @@
 [
   {
     "year": 2003,
-    "president": "Mic",
-    "vicepresident": "Bastien",
-    "cashier": "ChristianW"
+    "president": 10,
+    "vicepresident": 1,
+    "cashier": 3
   },
   {
     "year": 2004,
-    "president": "Mic",
-    "vicepresident": "Bastien",
-    "cashier": "ChristianW"
+    "president": 10,
+    "vicepresident": 1,
+    "cashier": 3
   },
   {
     "year": 2005,
-    "president": "Mic",
-    "vicepresident": "Bastien",
-    "cashier": "ChristianW"
+    "president": 10,
+    "vicepresident": 1,
+    "cashier": 3
   },
   {
     "year": 2006,
-    "president": "Mic",
-    "vicepresident": "Bastien",
-    "cashier": "ChristianW"
+    "president": 10,
+    "vicepresident": 1,
+    "cashier": 3
   },
   {
     "year": 2007,
-    "president": "Mic",
-    "vicepresident": "Gab",
-    "cashier": "ChristianW"
+    "president": 10,
+    "vicepresident": 5,
+    "cashier": 3
   },
   {
     "year": 2008,
-    "president": "ChristianW",
-    "vicepresident": "Séb",
-    "cashier": "Julien"
+    "president": 3,
+    "vicepresident": 12,
+    "cashier": 8
   },
   {
     "year": 2009,
-    "president": "ChristianW",
-    "vicepresident": "Séb",
-    "cashier": "Julien"
+    "president": 3,
+    "vicepresident": 12,
+    "cashier": 8
   },
   {
     "year": 2010,
-    "president": "ChristianW",
-    "vicepresident": "Séb",
-    "cashier": "Julien"
+    "president": 3,
+    "vicepresident": 12,
+    "cashier": 8
   },
   {
     "year": 2011,
-    "president": "ChristianW",
-    "vicepresident": "Séb",
-    "cashier": "Julien"
+    "president": 3,
+    "vicepresident": 12,
+    "cashier": 8
   },
   {
     "year": 2012,
-    "president": "ChristianW",
-    "vicepresident": "Séb",
-    "cashier": "Julien"
+    "president": 3,
+    "vicepresident": 12,
+    "cashier": 8
   },
   {
     "year": 2013,
-    "president": "ChristianW",
-    "vicepresident": "Séb",
-    "cashier": "Julien"
+    "president": 3,
+    "vicepresident": 12,
+    "cashier": 8
   },
   {
     "year": 2014,
-    "president": "ChristianW",
-    "vicepresident": "Séb",
-    "cashier": "Julien"
+    "president": 3,
+    "vicepresident": 12,
+    "cashier": 8
   },
   {
     "year": 2015,
-    "president": "Nicolas",
-    "vicepresident": "ChristianP",
-    "cashier": "Yannick"
+    "president": 11,
+    "vicepresident": 2,
+    "cashier": 23
   },
   {
     "year": 2016,
-    "president": "Séb",
-    "vicepresident": "Bruno",
-    "cashier": "Julien"
+    "president": 12,
+    "vicepresident": 17,
+    "cashier": 8
   },
   {
     "year": 2017,
-    "president": "Séb",
-    "vicepresident": "Mic",
-    "cashier": "Julien"
+    "president": 12,
+    "vicepresident": 10,
+    "cashier": 8
   },
   {
     "year": 2018,
-    "president": "Séb",
-    "vicepresident": "Mathieu",
-    "cashier": "Julien"
+    "president": 12,
+    "vicepresident": 20,
+    "cashier": 8
   },
   {
     "year": 2019,
-    "president": "Bruno",
-    "vicepresident": "Manu1",
-    "cashier": "Julien"
+    "president": 17,
+    "vicepresident": 9,
+    "cashier": 8
   },
   {
     "year": 2020,
-    "president": "Bastien",
-    "vicepresident": "Mathieu",
-    "cashier": "Julien"
+    "president": 1,
+    "vicepresident": 20,
+    "cashier": 8
   },
   {
     "year": 2021,
-    "president": "Mathieu",
-    "vicepresident": "Manu1",
-    "cashier": "Julien"
+    "president": 20,
+    "vicepresident": 9,
+    "cashier": 8
   },
   {
     "year": 2022,
-    "president": "Gab",
-    "vicepresident": "Giova",
-    "cashier": "Julien"
+    "president": 5,
+    "vicepresident": 21,
+    "cashier": 8
   },
   {
     "year": 2023,
-    "president": "Andréa",
-    "vicepresident": "Séb",
-    "cashier": "Julien"
+    "president": 16,
+    "vicepresident": 12,
+    "cashier": 8
   },
   {
     "year": 2024,
-    "president": "Julien",
-    "vicepresident": "Mic",
-    "f": "Yves"
+    "president": 8,
+    "vicepresident": 10,
+    "fumier": 19
   },
   {
     "year": 2025,
-    "president": "Julien",
-    "vicepresident": "Nicolas",
-    "f": "ChristianW"
+    "president": 8,
+    "vicepresident": 11,
+    "fumier": 3
   },
   {
     "year": 2026,
-    "president": "Bruno",
-    "vicepresident": "Manu1",
-    "f": "Yannick"
+    "president": 17,
+    "vicepresident": 9,
+    "fumier": 23
   }
 ]

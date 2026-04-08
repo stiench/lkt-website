@@ -1,14 +1,8 @@
 [
   {
-    "name": "Mic",
-    "pseudo": "Beorn",
-    "pseudoShort": "Berno",
-    "start": "Fondateur",
-    "end": "",
-    "comment": ""
-  },
-  {
+    "id": 1,
     "name": "Bastien",
+    "surname": "Rebetez",
     "pseudo": "Rampan",
     "pseudoShort": "Rmp",
     "start": "Fondateur",
@@ -16,55 +10,9 @@
     "comment": ""
   },
   {
-    "name": "ChristianW",
-    "pseudo": "Rafaruto",
-    "pseudoShort": "Rafa",
-    "start": "Fondateur",
-    "end": "",
-    "comment": ""
-  },
-  {
-    "name": "Manu1",
-    "pseudo": "Manmu",
-    "pseudoShort": "Manu",
-    "start": "Fondateur",
-    "end": "",
-    "comment": ""
-  },
-  {
-    "name": "Cyril",
-    "pseudo": "Chaka",
-    "pseudoShort": "Chaka",
-    "start": "Fondateur",
-    "end": "",
-    "comment": ""
-  },
-  {
-    "name": "Nicolas",
-    "pseudo": "Vassily",
-    "pseudoShort": "Vass",
-    "start": "Fondateur",
-    "end": "",
-    "comment": ""
-  },
-  {
-    "name": "Séb",
-    "pseudo": "Muldoon",
-    "pseudoShort": "mdn",
-    "start": "Fondateur",
-    "end": "",
-    "comment": ""
-  },
-  {
-    "name": "Tim",
-    "pseudo": "LeGourdin",
-    "pseudoShort": "Gourdin",
-    "start": "Fondateur",
-    "end": "",
-    "comment": ""
-  },
-  {
-    "name": "ChristianP",
+    "id": 2,
+    "name": "Christian",
+    "surname": "Perrudet",
     "pseudo": "Lui",
     "pseudoShort": "Lui",
     "start": "Fondateur",
@@ -72,7 +20,29 @@
     "comment": "Quitté en 2009 et revenu en 2012"
   },
   {
+    "id": 3,
+    "name": "Christian",
+    "surname": "Wyssa",
+    "pseudo": "Rafaruto",
+    "pseudoShort": "Rafa",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": 4,
+    "name": "Cyril",
+    "surname": "Blanco",
+    "pseudo": "Chaka",
+    "pseudoShort": "Chaka",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": 5,
     "name": "Gab",
+    "surname": "Suter",
     "pseudo": "Noriox",
     "pseudoShort": "Noriox",
     "start": "Fondateur",
@@ -80,23 +50,9 @@
     "comment": ""
   },
   {
-    "name": "Julien",
-    "pseudo": "Groumpf",
-    "pseudoShort": "Groumpf",
-    "start": "Fondateur",
-    "end": "",
-    "comment": ""
-  },
-  {
-    "name": "Jérémy",
-    "pseudo": "G2Loq",
-    "pseudoShort": "G2Loq",
-    "start": "Fondateur",
-    "end": "2003",
-    "comment": ""
-  },
-  {
+    "id": 6,
     "name": "Guewen",
+    "surname": "Baconnier",
     "pseudo": "Earwing",
     "pseudoShort": "Earwing",
     "start": "Fondateur",
@@ -104,7 +60,79 @@
     "comment": ""
   },
   {
+    "id": 7,
+    "name": "Jérémy",
+    "surname": "G2Loq",
+    "pseudo": "G2Loq",
+    "pseudoShort": "G2Loq",
+    "start": "Fondateur",
+    "end": "2003",
+    "comment": ""
+  },
+  {
+    "id": 8,
+    "name": "Julien",
+    "surname": "Weibel",
+    "pseudo": "Groumpf",
+    "pseudoShort": "Groumpf",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": 9,
+    "name": "Manuel",
+    "surname": "Bavaud",
+    "pseudo": "Manmu",
+    "pseudoShort": "Manu",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": 10,
+    "name": "Michael",
+    "surname": "Wyssa",
+    "pseudo": "Beorn",
+    "pseudoShort": "Berno",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": 11,
+    "name": "Nicolas",
+    "surname": "Garcia",
+    "pseudo": "Vassily",
+    "pseudoShort": "Vass",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": 12,
+    "name": "Sébastien",
+    "surname": "Gerber",
+    "pseudo": "Muldoon",
+    "pseudoShort": "mdn",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": 13,
+    "name": "Timothée",
+    "surname": "Haller",
+    "pseudo": "LeGourdin",
+    "pseudoShort": "Gourdin",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": 14,
     "name": "Christophe",
+    "surname": "Cossi",
     "pseudo": "Prophet",
     "pseudoShort": "Prophet",
     "start": "2003",
@@ -112,39 +140,9 @@
     "comment": ""
   },
   {
-    "name": "Yannick",
-    "pseudo": "Lulu",
-    "pseudoShort": "Lulu",
-    "start": "",
-    "end": "",
-    "comment": "Membre d'honneur"
-  },
-  {
-    "name": "Bruno",
-    "pseudo": "Turtle",
-    "pseudoShort": "Turtle",
-    "start": "2004",
-    "end": "",
-    "comment": ""
-  },
-  {
-    "name": "Sylvain",
-    "pseudo": "Sablas",
-    "pseudoShort": "Sablas",
-    "start": "2004",
-    "end": "2007",
-    "comment": ""
-  },
-  {
-    "name": "Yves",
-    "pseudo": "Kaiz",
-    "pseudoShort": "Kaiz",
-    "start": "2004",
-    "end": "",
-    "comment": ""
-  },
-  {
+    "id": 15,
     "name": "Alexandre",
+    "surname": "Romero",
     "pseudo": "KillerQueen",
     "pseudoShort": "KQ",
     "start": "2004",
@@ -152,7 +150,9 @@
     "comment": ""
   },
   {
+    "id": 16,
     "name": "Andréa",
+    "surname": "Zaffalon",
     "pseudo": "Mandrax",
     "pseudoShort": "Mdx",
     "start": "2004",
@@ -160,7 +160,38 @@
     "comment": ""
   },
   {
+    "id": 17,
+    "name": "Bruno",
+    "surname": "Gavaraglia",
+    "pseudo": "Turtle",
+    "pseudoShort": "Turtle",
+    "start": "2004",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": 18,
+    "name": "Sylvain",
+    "surname": "Neyroud",
+    "pseudoShort": "Sablas",
+    "start": "2004",
+    "end": "2007",
+    "comment": ""
+  },
+  {
+    "id": 19,
+    "name": "Yves",
+    "surname": "Raschle",
+    "pseudo": "Kaiz",
+    "pseudoShort": "Kaiz",
+    "start": "2004",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": 20,
     "name": "Mathieu",
+    "surname": "Ruffieux",
     "pseudo": "Sblarfei",
     "pseudoShort": "Sblarf",
     "start": "2007",
@@ -168,7 +199,9 @@
     "comment": ""
   },
   {
-    "name": "Giova",
+    "id": 21,
+    "name": "Giovani",
+    "surname": "La Rocca",
     "pseudo": "Gova",
     "pseudoShort": "Gova",
     "start": "2013",
@@ -176,11 +209,23 @@
     "comment": ""
   },
   {
-    "name": "Manu2",
+    "id": 22,
+    "name": "Manuel",
+    "surname": "Deutsch",
     "pseudo": "Kobra",
     "pseudoShort": "Kobra",
     "start": "2018",
     "end": "",
     "comment": ""
+  },
+  {
+    "id": 23,
+    "name": "Yannick",
+    "surname": "Beuchat",
+    "pseudo": "Lulu",
+    "pseudoShort": "Lulu",
+    "start": "",
+    "end": "",
+    "comment": "Membre d'honneur"
   }
 ]
