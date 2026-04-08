@@ -43,6 +43,15 @@ function getWinnerDisplayName(tournament, membersById = getMembersById()) {
     .join(' & ');
 }
 
+function getMemberDisplayName(memberId, membersById = getMembersById()) {
+  const member = membersById[memberId];
+
+  if (!member)
+    return memberId ? `#${memberId}` : '';
+
+  return member.surname ? `${member.name} ${member.surname}` : (member.uniqueName ?? member.name);
+}
+
 function buildStars(wins) {
   return FULL_STAR_ICON.repeat(Math.floor(wins)) + (wins % 1 > 0 ? HALF_STAR_ICON : '');
 }
@@ -85,12 +94,17 @@ function generateCL() {
 
 function generateCommitteeMembers() {
   const committeeRef = document.getElementById('committeeMembers');
+  const membersById = getMembersById();
 
   if (!committeeRef)
     return;
 
   committeeRef.innerHTML = committeeMembers.map((member) => {
-    return `<i class="fa fa-user" aria-hidden="true"></i> ${member.role} <i class="fa fa-arrow-right" aria-hidden="true"></i> ${member.name}`;
+    const displayName = member.memberId
+      ? getMemberDisplayName(member.memberId, membersById)
+      : member.name;
+
+    return `<i class="fa fa-user" aria-hidden="true"></i> ${member.role} <i class="fa fa-arrow-right" aria-hidden="true"></i> ${displayName}`;
   }).join('<br />');
 }
 

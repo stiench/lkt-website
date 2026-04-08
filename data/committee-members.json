@@ -1,14 +1,14 @@
 [
   {
     "role": "Président",
-    "name": "Bruno Garavaglia"
+    "memberId": "BGA"
   },
   {
     "role": "Vice-Président",
-    "name": "Manuel Bavaud"
+    "memberId": "MBD"
   },
   {
     "role": "Secrétaire",
-    "name": "Yannick Beuchat"
+    "memberId": "YBT"
   }
 ]
