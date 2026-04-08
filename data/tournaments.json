@@ -1,107 +1,115 @@
 [
-    {
-        "year": 2025,
-        "lan": "LANekdote The Gathering",
-        "name": "Yannick"
-    },
-    {
-        "year": 2024,
-        "lan": "Pas LAN",
-        "name": "ChristianW"
-    },
-    {
-        "year": 2023,
-        "lan": "LANiversaire",
-        "name": "Yves"
-    },
-    {
-        "year": 2022,
-        "lan": "PorcLAN",
-        "name": "Manu2"
-    },
-    {
-        "year": 2021,
-        "lan": "Jass",
-        "name": "Mic & Gab"
-    },
-    {
-        "year": 2020,
-        "lan": "Qui veut noober des millions",
-        "name": "Séb"
-    },
-    {
-        "year": 2019,
-        "lan": "Burger Quiz LAN",
-        "name": "Nicolas"
-    },
-    {
-        "year": 2018,
-        "lan": "Magical Mystery LAN",
-        "name": "Yannick"
-    },
-    {
-        "year": 2017,
-        "lan": "LANAmerica",
-        "name": "Julien"
-    },
-    {
-        "year": 2016,
-        "lan": "PauLANer",
-        "name": "Andréa"
-    },
-    {
-        "year": 2015,
-        "lan": "Battle RoyaLAN",
-        "name": "Manu1"
-    },
-    {
-        "year": 2014,
-        "lan": "GranLANismo",
-        "name": "Séb"
-    },
-    {
-        "year": 2013,
-        "lan": "MasterLAN",
-        "name": "Manu1"
-    },
-    {
-        "year": 2012,
-        "lan": "PekLAN Express, le bateur mystère",
-        "name": "Séb"
-    },
-    {
-        "year": 2011,
-        "lan": "PekLAN Express, le copier coller",
-        "name": "N/A"
-    },
-    {
-        "year": 2010,
-        "lan": "PekLAN Express, la route de la Whine",
-        "name": "Séb"
-    },
-    {
-        "year": 2009,
-        "lan": "LAN-Story 3",
-        "name": "Yannick"
-    },
-    {
-        "year": 2008,
-        "lan": "LAN & Conquer",
-        "name": "N/A"
-    },
-    {
-        "year": 2007,
-        "lan": "Koh-LANta",
-        "name": "Tim"
-    },
-    {
-        "year": 2006,
-        "lan": "Lan-Story 2",
-        "name": "Nicolas"
-    },
-    {
-        "year": 2005,
-        "lan": "Lan-Story",
-        "name": "Bruno"
-    }
+  {
+    "year": 2005,
+    "lan": "Lan-Story",
+    "winnerId": "BGA"
+  },
+  {
+    "year": 2006,
+    "lan": "Lan-Story 2",
+    "winnerId": "NGA"
+  },
+  {
+    "year": 2007,
+    "lan": "Koh-LANta",
+    "winnerId": "THR"
+  },
+  {
+    "year": 2008,
+    "lan": "LAN & Conquer",
+    "winnerId": null
+  },
+  {
+    "year": 2009,
+    "lan": "LAN-Story 3",
+    "winnerId": "YBT"
+  },
+  {
+    "year": 2010,
+    "lan": "PekLAN Express, la route de la Whine",
+    "winnerId": "SGR"
+  },
+  {
+    "year": 2011,
+    "lan": "PekLAN Express, le copier coller",
+    "winnerId": null
+  },
+  {
+    "year": 2012,
+    "lan": "PekLAN Express, le bateur mystère",
+    "winnerId": "SGR"
+  },
+  {
+    "year": 2013,
+    "lan": "MasterLAN",
+    "winnerId": "MBD"
+  },
+  {
+    "year": 2014,
+    "lan": "GranLANismo",
+    "winnerId": "SGR"
+  },
+  {
+    "year": 2015,
+    "lan": "Battle RoyaLAN",
+    "winnerId": "MBD"
+  },
+  {
+    "year": 2016,
+    "lan": "PauLANer",
+    "winnerId": "AZN"
+  },
+  {
+    "year": 2017,
+    "lan": "LANAmerica",
+    "winnerId": "JWL"
+  },
+  {
+    "year": 2018,
+    "lan": "Magical Mystery LAN",
+    "winnerId": "YBT"
+  },
+  {
+    "year": 2019,
+    "lan": "Burger Quiz LAN",
+    "winnerId": "NGA"
+  },
+  {
+    "year": 2020,
+    "lan": "Qui veut noober des millions",
+    "winnerId": "SGR"
+  },
+  {
+    "year": 2021,
+    "lan": "Jass",
+    "winnerId": [
+      "GSR",
+      "MWA"
+    ]
+  },
+  {
+    "year": 2022,
+    "lan": "PorcLAN",
+    "winnerId": "MDH"
+  },
+  {
+    "year": 2023,
+    "lan": "LANiversaire",
+    "winnerId": "YRE"
+  },
+  {
+    "year": 2024,
+    "lan": "Pas LAN",
+    "winnerId": "CWA"
+  },
+  {
+    "year": 2025,
+    "lan": "LANekdote The Gathering",
+    "winnerId": "YBT"
+  },
+  {
+    "year": 2026,
+    "lan": "tbd",
+    "winnerId": null
+  }
 ]

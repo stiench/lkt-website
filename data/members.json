@@ -1,186 +1,254 @@
 [
-    {
-        "name": "Mic",
-        "pseudo" : "Beorn",
-        "pseudoShort" : "Berno",
-        "start" : "Fondateur",
-        "end" : "",
-        "comment" : ""
-    },
-    {
-        "name": "Bastien",
-        "pseudo" : "Rampan",
-        "pseudoShort" : "Rmp",
-        "start" : "Fondateur",
-        "end" : "",
-        "comment" : ""
-    },
-    {
-        "name": "ChristianW",
-        "pseudo" : "Rafaruto",
-        "pseudoShort" : "Rafa",
-        "start" : "Fondateur",
-        "end" : "",
-        "comment" : ""
-    },
-    {
-        "name": "Manu1",
-        "pseudo" : "Manmu",
-        "pseudoShort" : "Manu",
-        "start" : "Fondateur",
-        "end" : "",
-        "comment" : ""
-    },
-    {
-        "name": "Cyril",
-        "pseudo" : "Chaka",
-        "pseudoShort" : "Chaka",
-        "start" : "Fondateur",
-        "end" : "",
-        "comment" : ""
-    },
-    {
-        "name": "Nicolas",
-        "pseudo" : "Vassily",
-        "pseudoShort" : "Vass",
-        "start" : "Fondateur",
-        "end" : "",
-        "comment" : ""
-    },
-    {
-        "name": "Séb",
-        "pseudo" : "Muldoon",
-        "pseudoShort" : "mdn",
-        "start" : "Fondateur",
-        "end" : "",
-        "comment" : ""
-    },
-    {
-        "name": "Tim",
-        "pseudo" : "LeGourdin",
-        "pseudoShort" : "Gourdin",
-        "start" : "Fondateur",
-        "end" : "",
-        "comment" : ""
-    },
-    {
-        "name": "ChristianP",
-        "pseudo" : "Lui",
-        "pseudoShort" : "Lui",
-        "start" : "Fondateur",
-        "end" : "",
-        "comment" : "Quitté en 2009 et revenu en 2012"
-    },
-    {
-        "name": "Gab",
-        "pseudo" : "Noriox",
-        "pseudoShort" : "Noriox",
-        "start" : "Fondateur",
-        "end" : "",
-        "comment" : ""
-    },
-    {
-        "name": "Julien",
-        "pseudo" : "Groumpf",
-        "pseudoShort" : "Groumpf",
-        "start" : "Fondateur",
-        "end" : "",
-        "comment" : ""
-    },
-    {
-        "name": "Jérémy",
-        "pseudo" : "G2Loq",
-        "pseudoShort" : "G2Loq",
-        "start" : "Fondateur",
-        "end" : "2003",
-        "comment" : ""
-    },
-    {
-        "name": "Guewen",
-        "pseudo" : "Earwing",
-        "pseudoShort" : "Earwing",
-        "start" : "Fondateur",
-        "end" : "2004",
-        "comment" : ""
-    },
-    {
-        "name": "Christophe",
-        "pseudo" : "Prophet",
-        "pseudoShort" : "Prophet",
-        "start" : "2003",
-        "end" : "2006",
-        "comment" : ""
-    },
-    {
-        "name": "Yannick",
-        "pseudo" : "Lulu",
-        "pseudoShort" : "Lulu",
-        "start" : "",
-        "end" : "",
-        "comment" : "Membre d'honneur"
-    },
-    {
-        "name": "Bruno",
-        "pseudo" : "Turtle",
-        "pseudoShort" : "Turtle",
-        "start" : "2004",
-        "end" : "",
-        "comment" : ""
-    },
-    {
-        "name": "Sylvain",
-        "pseudo" : "Sablas",
-        "pseudoShort" : "Sablas",
-        "start" : "2004",
-        "end" : "2007",
-        "comment" : ""
-    },
-    {
-        "name": "Yves",
-        "pseudo" : "Kaiz",
-        "pseudoShort" : "Kaiz",
-        "start" : "2004",
-        "end" : "",
-        "comment" : ""
-    },
-    {
-        "name": "Alexandre",
-        "pseudo" : "KillerQueen",
-        "pseudoShort" : "KQ",
-        "start" : "2004",
-        "end" : "",
-        "comment" : ""
-    },
-    {
-        "name": "Andréa",
-        "pseudo" : "Mandrax",
-        "pseudoShort" : "Mdx",
-        "start" : "2004",
-        "end" : "",
-        "comment" : ""
-    },
-    {
-        "name": "Mathieu",
-        "pseudo" : "Sblarfei",
-        "pseudoShort" : "Sblarf",
-        "start" : "2007",
-        "end" : "",
-        "comment" : ""
-    },
-    {
-        "name": "Giova",
-        "pseudo" : "Gova",
-        "pseudoShort" : "Gova",
-        "start" : "2013",
-        "end" : "",
-        "comment" : ""
-    },
-    {
-        "name": "Manu2",
-        "pseudo" : "Kobra",
-        "pseudoShort" : "Kobra",
-        "start" : "2018",
-        "end" : "",
-        "comment" : ""
-    }
+  {
+    "id": "BRZ",
+    "name": "Bastien",
+    "surname": "Rebetez",
+    "uniqueName": "Bastien",
+    "pseudo": "Rampan",
+    "pseudoShort": "Rmp",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": "CPT",
+    "name": "Christian",
+    "surname": "Perrudet",
+    "uniqueName": "Christian P",
+    "pseudo": "Lui",
+    "pseudoShort": "Lui",
+    "start": "Fondateur",
+    "end": "",
+    "comment": "Quitté en 2009 et revenu en 2012"
+  },
+  {
+    "id": "CWA",
+    "name": "Christian",
+    "surname": "Wyssa",
+    "uniqueName": "Christian W",
+    "pseudo": "Rafaruto",
+    "pseudoShort": "Rafa",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": "CBO",
+    "name": "Cyril",
+    "surname": "Blanco",
+    "uniqueName": "Cyril",
+    "pseudo": "Chaka",
+    "pseudoShort": "Chaka",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": "GSR",
+    "name": "Gabriel",
+    "surname": "Suter",
+    "uniqueName": "Gab",
+    "pseudo": "Noriox",
+    "pseudoShort": "Noriox",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": "GBR",
+    "name": "Guewen",
+    "surname": "Baconnier",
+    "uniqueName": "Guewen",
+    "pseudo": "Earwing",
+    "pseudoShort": "Earwing",
+    "start": "Fondateur",
+    "end": "2004",
+    "comment": ""
+  },
+  {
+    "id": "JGQ",
+    "name": "Jérémy",
+    "surname": "G2Loq",
+    "uniqueName": "Jérémy",
+    "pseudo": "G2Loq",
+    "pseudoShort": "G2Loq",
+    "start": "Fondateur",
+    "end": "2003",
+    "comment": ""
+  },
+  {
+    "id": "JWL",
+    "name": "Julien",
+    "surname": "Weibel",
+    "uniqueName": "Julien",
+    "pseudo": "Groumpf",
+    "pseudoShort": "Groumpf",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": "MBD",
+    "name": "Manuel",
+    "surname": "Bavaud",
+    "uniqueName": "Manu 1",
+    "pseudo": "Manmu",
+    "pseudoShort": "Manu",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": "MWA",
+    "name": "Michael",
+    "surname": "Wyssa",
+    "uniqueName": "Mic",
+    "pseudo": "Beorn",
+    "pseudoShort": "Berno",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": "NGA",
+    "name": "Nicolas",
+    "surname": "Garcia",
+    "uniqueName": "Nicolas",
+    "pseudo": "Vassily",
+    "pseudoShort": "Vass",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": "SGR",
+    "name": "Sébastien",
+    "surname": "Gerber",
+    "uniqueName": "Séb",
+    "pseudo": "Muldoon",
+    "pseudoShort": "mdn",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": "THR",
+    "name": "Timothée",
+    "surname": "Haller",
+    "uniqueName": "Tim",
+    "pseudo": "LeGourdin",
+    "pseudoShort": "Gourdin",
+    "start": "Fondateur",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": "CCI",
+    "name": "Christophe",
+    "surname": "Cossi",
+    "uniqueName": "Christophe",
+    "pseudo": "Prophet",
+    "pseudoShort": "Prophet",
+    "start": "2003",
+    "end": "2006",
+    "comment": ""
+  },
+  {
+    "id": "ARO",
+    "name": "Alexandre",
+    "surname": "Romero",
+    "uniqueName": "Alex",
+    "pseudo": "KillerQueen",
+    "pseudoShort": "KQ",
+    "start": "2004",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": "AZN",
+    "name": "Andréa",
+    "surname": "Zaffalon",
+    "uniqueName": "Andréa",
+    "pseudo": "Mandrax",
+    "pseudoShort": "Mdx",
+    "start": "2004",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": "BGA",
+    "name": "Bruno",
+    "surname": "Gavaraglia",
+    "uniqueName": "Bruno",
+    "pseudo": "Turtle",
+    "pseudoShort": "Turtle",
+    "start": "2004",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": "SND",
+    "name": "Sylvain",
+    "surname": "Neyroud",
+    "uniqueName": "Sylvain",
+    "pseudoShort": "Sablas",
+    "start": "2004",
+    "end": "2007",
+    "comment": ""
+  },
+  {
+    "id": "YRE",
+    "name": "Yves",
+    "surname": "Raschle",
+    "uniqueName": "Yves",
+    "pseudo": "Kaiz",
+    "pseudoShort": "Kaiz",
+    "start": "2004",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": "MRX",
+    "name": "Mathieu",
+    "surname": "Ruffieux",
+    "uniqueName": "Mathieu",
+    "pseudo": "Sblarfei",
+    "pseudoShort": "Sblarf",
+    "start": "2007",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": "GLA",
+    "name": "Giovani",
+    "surname": "La Rocca",
+    "uniqueName": "Giova",
+    "pseudo": "Gova",
+    "pseudoShort": "Gova",
+    "start": "2013",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": "MDH",
+    "name": "Manuel",
+    "surname": "Deutsch",
+    "uniqueName": "Manu 2",
+    "pseudo": "Kobra",
+    "pseudoShort": "Kobra",
+    "start": "2018",
+    "end": "",
+    "comment": ""
+  },
+  {
+    "id": "YBT",
+    "name": "Yannick",
+    "surname": "Beuchat",
+    "uniqueName": "Yannick",
+    "pseudo": "Lulu",
+    "pseudoShort": "Lulu",
+    "start": "",
+    "end": "",
+    "comment": "Membre d'honneur"
+  }
 ]
