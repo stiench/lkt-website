@@ -21,7 +21,7 @@ function getMemberName(memberId, membersById) {
   if (memberId == null)
     return '';
 
-  return membersById[memberId]?.name ?? String(memberId);
+  return membersById[memberId]?.uniqueName ?? String(memberId);
 }
 
 function renderCommitteeRows() {

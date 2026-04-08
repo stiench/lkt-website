@@ -55,7 +55,7 @@ function resetTable(headerRow, bodyRef) {
 
 function renderMemberHeaders(headerRow, activeMembers) {
   activeMembers.forEach((member) => {
-    headerRow.insertCell().outerHTML = `<th width="70">${member.name}</th>`;
+    headerRow.insertCell().outerHTML = `<th width="70">${member.uniqueName}</th>`;
   });
 }
 

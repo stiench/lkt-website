@@ -39,7 +39,7 @@ function getWinnerDisplayName(tournament, membersById = getMembersById()) {
     return tournament.lan.toLowerCase() === 'tbd' ? 'tbd' : 'N/A';
 
   return winnerIds
-    .map((id) => membersById[id]?.name ?? `#${id}`)
+    .map((id) => membersById[id]?.uniqueName ?? `#${id}`)
     .join(' & ');
 }
 
@@ -49,7 +49,7 @@ function buildStars(wins) {
 
 function getStandings() {
   const winsById = getActiveMembers().reduce((result, member) => {
-    result[member.id] = { id: member.id, name: member.name, wins: 0 };
+    result[member.id] = { id: member.id, uniqueName: member.uniqueName, wins: 0 };
     return result;
   }, {});
 
@@ -63,7 +63,7 @@ function getStandings() {
 
   return Object.values(winsById).sort((first, second) => {
     if (second.wins === first.wins)
-      return first.name.localeCompare(second.name);
+      return first.uniqueName.localeCompare(second.uniqueName);
 
     return second.wins - first.wins;
   });
@@ -103,7 +103,7 @@ function generateST() {
     const stars = buildStars(member.wins);
 
     newRow.insertCell().outerHTML = `<th><div class="text-center">${stars}</div></th>`;
-    newRow.insertCell().outerHTML = `<td>${member.name}</td>`;
+    newRow.insertCell().outerHTML = `<td>${member.uniqueName}</td>`;
   });
 }
 
