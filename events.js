@@ -13,14 +13,22 @@ async function loadMembers() {
 }
 
 function generateEvents() {
-  var tbodyRef = document.getElementById('tableEvents').getElementsByTagName('tbody')[0];
-  var theadRef = document.getElementById('tableEvents').getElementsByTagName('thead')[0].rows[0];
+  let tbodyRef = document.getElementById('tableEvents').getElementsByTagName('tbody')[0];
+  let theadRef = document.getElementById('tableEvents').getElementsByTagName('thead')[0].rows[0];
 
-  members = members.filter(member => member.end == "");
-  members.sort(function (first, second) {
-    return second.name - first.name;
+  let activeMembers = members.filter(member => member.end == "");
+
+  activeMembers.sort(function (first, second) {
+    let firstCount = events.filter(event => event.members.includes(first.name)).length;
+    let secondCount = events.filter(event => event.members.includes(second.name)).length;
+
+    if (secondCount == firstCount)
+      return first.name.localeCompare(second.name);
+
+    return secondCount - firstCount;
   });
-  members.forEach(function (member) {
+
+  activeMembers.forEach(function (member) {
     theadRef.insertCell().outerHTML = "<th width=\"70\">" + member.name + "</th>";
   });
 
@@ -31,8 +39,8 @@ function generateEvents() {
   });
 
   events.forEach(function (event) {
-    var newRow = tbodyRef.insertRow();
-    var style = "";
+    let newRow = tbodyRef.insertRow();
+    let style = "";
 
     if (!event.isCDO)
       style = "background-color: #CBF2FF;";
@@ -42,10 +50,10 @@ function generateEvents() {
     newRow.insertCell().outerHTML = "<th style='" + style + "'>" + event.start + "</th>";
     newRow.insertCell().outerHTML = "<th style='" + style + "'>" + event.end + "</th>";
 
-    members.forEach(function (member) {
+    activeMembers.forEach(function (member) {
       if (event.members.includes(member.name)) {
         newRow.insertCell().outerHTML = "<th style='" + style + "'><i class='fa fa-check fa-lg' aria-hidden='true' style='color:#008000;'></i></th>";
-      }else{
+      } else {
         newRow.insertCell().outerHTML = "<th style='" + style + "'></th>";
       }
     });
