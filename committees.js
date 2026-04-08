@@ -17,9 +17,9 @@ function renderCommitteeRows() {
     const newRow = tbodyRef.insertRow();
 
     newRow.insertCell().outerHTML = `<th>${committee.year}</th>`;
-    newRow.insertCell().outerHTML = `<td>${committee.p}</td>`;
-    newRow.insertCell().outerHTML = `<td>${committee.vp}</td>`;
-    newRow.insertCell().outerHTML = `<td>${committee.c ?? ''}</td>`;
+    newRow.insertCell().outerHTML = `<td>${committee.president}</td>`;
+    newRow.insertCell().outerHTML = `<td>${committee.vicepresident}</td>`;
+    newRow.insertCell().outerHTML = `<td>${committee.cashier ?? ''}</td>`;
     newRow.insertCell().outerHTML = `<td>${committee.f ?? ''}</td>`;
   });
 }

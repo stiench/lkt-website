@@ -1,146 +1,146 @@
 [
   {
     "year": 2003,
-    "p": "Mic",
-    "vp": "Bastien",
-    "c": "ChristianW"
+    "president": "Mic",
+    "vicepresident": "Bastien",
+    "cashier": "ChristianW"
   },
   {
     "year": 2004,
-    "p": "Mic",
-    "vp": "Bastien",
-    "c": "ChristianW"
+    "president": "Mic",
+    "vicepresident": "Bastien",
+    "cashier": "ChristianW"
   },
   {
     "year": 2005,
-    "p": "Mic",
-    "vp": "Bastien",
-    "c": "ChristianW"
+    "president": "Mic",
+    "vicepresident": "Bastien",
+    "cashier": "ChristianW"
   },
   {
     "year": 2006,
-    "p": "Mic",
-    "vp": "Bastien",
-    "c": "ChristianW"
+    "president": "Mic",
+    "vicepresident": "Bastien",
+    "cashier": "ChristianW"
   },
   {
     "year": 2007,
-    "p": "Mic",
-    "vp": "Gab",
-    "c": "ChristianW"
+    "president": "Mic",
+    "vicepresident": "Gab",
+    "cashier": "ChristianW"
   },
   {
     "year": 2008,
-    "p": "ChristianW",
-    "vp": "Séb",
-    "c": "Julien"
+    "president": "ChristianW",
+    "vicepresident": "Séb",
+    "cashier": "Julien"
   },
   {
     "year": 2009,
-    "p": "ChristianW",
-    "vp": "Séb",
-    "c": "Julien"
+    "president": "ChristianW",
+    "vicepresident": "Séb",
+    "cashier": "Julien"
   },
   {
     "year": 2010,
-    "p": "ChristianW",
-    "vp": "Séb",
-    "c": "Julien"
+    "president": "ChristianW",
+    "vicepresident": "Séb",
+    "cashier": "Julien"
   },
   {
     "year": 2011,
-    "p": "ChristianW",
-    "vp": "Séb",
-    "c": "Julien"
+    "president": "ChristianW",
+    "vicepresident": "Séb",
+    "cashier": "Julien"
   },
   {
     "year": 2012,
-    "p": "ChristianW",
-    "vp": "Séb",
-    "c": "Julien"
+    "president": "ChristianW",
+    "vicepresident": "Séb",
+    "cashier": "Julien"
   },
   {
     "year": 2013,
-    "p": "ChristianW",
-    "vp": "Séb",
-    "c": "Julien"
+    "president": "ChristianW",
+    "vicepresident": "Séb",
+    "cashier": "Julien"
   },
   {
     "year": 2014,
-    "p": "ChristianW",
-    "vp": "Séb",
-    "c": "Julien"
+    "president": "ChristianW",
+    "vicepresident": "Séb",
+    "cashier": "Julien"
   },
   {
     "year": 2015,
-    "p": "Nicolas",
-    "vp": "ChristianP",
-    "c": "Yannick"
+    "president": "Nicolas",
+    "vicepresident": "ChristianP",
+    "cashier": "Yannick"
   },
   {
     "year": 2016,
-    "p": "Séb",
-    "vp": "Bruno",
-    "c": "Julien"
+    "president": "Séb",
+    "vicepresident": "Bruno",
+    "cashier": "Julien"
   },
   {
     "year": 2017,
-    "p": "Séb",
-    "vp": "Mic",
-    "c": "Julien"
+    "president": "Séb",
+    "vicepresident": "Mic",
+    "cashier": "Julien"
   },
   {
     "year": 2018,
-    "p": "Séb",
-    "vp": "Mathieu",
-    "c": "Julien"
+    "president": "Séb",
+    "vicepresident": "Mathieu",
+    "cashier": "Julien"
   },
   {
     "year": 2019,
-    "p": "Bruno",
-    "vp": "Manu1",
-    "c": "Julien"
+    "president": "Bruno",
+    "vicepresident": "Manu1",
+    "cashier": "Julien"
   },
   {
     "year": 2020,
-    "p": "Bastien",
-    "vp": "Mathieu",
-    "c": "Julien"
+    "president": "Bastien",
+    "vicepresident": "Mathieu",
+    "cashier": "Julien"
   },
   {
     "year": 2021,
-    "p": "Mathieu",
-    "vp": "Manu1",
-    "c": "Julien"
+    "president": "Mathieu",
+    "vicepresident": "Manu1",
+    "cashier": "Julien"
   },
   {
     "year": 2022,
-    "p": "Gab",
-    "vp": "Giova",
-    "c": "Julien"
+    "president": "Gab",
+    "vicepresident": "Giova",
+    "cashier": "Julien"
   },
   {
     "year": 2023,
-    "p": "Andréa",
-    "vp": "Séb",
-    "c": "Julien"
+    "president": "Andréa",
+    "vicepresident": "Séb",
+    "cashier": "Julien"
   },
   {
     "year": 2024,
-    "p": "Julien",
-    "vp": "Mic",
+    "president": "Julien",
+    "vicepresident": "Mic",
     "f": "Yves"
   },
   {
     "year": 2025,
-    "p": "Julien",
-    "vp": "Nicolas",
+    "president": "Julien",
+    "vicepresident": "Nicolas",
     "f": "ChristianW"
   },
   {
     "year": 2026,
-    "p": "Bruno",
-    "vp": "Manu1",
+    "president": "Bruno",
+    "vicepresident": "Manu1",
     "f": "Yannick"
   }
 ]
