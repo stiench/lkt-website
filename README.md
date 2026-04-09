@@ -8,6 +8,6 @@ TG Mic
 ## Run locally
 
 ```bash
-cd /home/sgerber/git/lkt-website
+cd <path>/lkt-website
 python3 -m http.server 8000
 ```
