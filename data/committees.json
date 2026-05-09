@@ -142,5 +142,11 @@
     "president": "BGA",
     "vicepresident": "MBD",
     "fumier": "YBT"
+  },
+  {
+    "year": 2027,
+    "president": "",
+    "vicepresident": "",
+    "fumier": ""
   }
 ]

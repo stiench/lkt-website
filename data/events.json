@@ -73,9 +73,7 @@
       "SND",
       "YRE"
     ],
-    "guests": [
-      "Carole"
-    ]
+    "guests": ["Carole"]
   },
   {
     "year": 2007,
@@ -101,9 +99,7 @@
       "YBT",
       "YRE"
     ],
-    "guests": [
-      "Carole"
-    ]
+    "guests": ["Carole"]
   },
   {
     "year": 2008,
@@ -177,10 +173,7 @@
       "YBT",
       "YRE"
     ],
-    "guests": [
-      "Sblanc",
-      "Zogzog"
-    ]
+    "guests": ["Sblanc", "Zogzog"]
   },
   {
     "year": 2009,
@@ -189,17 +182,7 @@
     "end": "2009-09-24",
     "remarks": "",
     "isCDO": false,
-    "members": [
-      "BRZ",
-      "CWA",
-      "GSR",
-      "JWL",
-      "MRX",
-      "MWA",
-      "NGA",
-      "SGR",
-      "THR"
-    ],
+    "members": ["BRZ", "CWA", "GSR", "JWL", "MRX", "MWA", "NGA", "SGR", "THR"],
     "guests": []
   },
   {
@@ -455,9 +438,7 @@
       "YBT",
       "YRE"
     ],
-    "guests": [
-      "Tiago"
-    ]
+    "guests": ["Tiago"]
   },
   {
     "year": 2017,
@@ -485,9 +466,7 @@
       "YBT",
       "YRE"
     ],
-    "guests": [
-      "Manu2"
-    ]
+    "guests": ["Manu2"]
   },
   {
     "year": 2018,
@@ -707,9 +686,7 @@
       "SGR",
       "YBT"
     ],
-    "guests": [
-      "Sablas"
-    ]
+    "guests": ["Sablas"]
   },
   {
     "year": 2025,
@@ -761,8 +738,16 @@
       "YBT",
       "YRE"
     ],
-    "guests": [
-      "Raph"
-    ]
+    "guests": ["Raph"]
+  },
+  {
+    "year": 2027,
+    "where": "Chateau d'Oex",
+    "start": "2027-05-06",
+    "end": "2027-06-10",
+    "remarks": "",
+    "isCDO": true,
+    "members": [],
+    "guests": []
   }
 ]
